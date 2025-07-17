@@ -764,7 +764,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                               }
 
                                                               context.goNamedAuth(
-                                                                  HomepageWidget
+                                                                  HomePageWidget
                                                                       .routeName,
                                                                   context
                                                                       .mounted);
@@ -933,7 +933,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                         }
 
                                                                         context.goNamedAuth(
-                                                                            HomepageWidget.routeName,
+                                                                            HomePageWidget.routeName,
                                                                             context.mounted);
                                                                       },
                                                                       text:
@@ -1477,7 +1477,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                               }
 
                                                               context.goNamedAuth(
-                                                                  HomepageWidget
+                                                                  HomePageWidget
                                                                       .routeName,
                                                                   context
                                                                       .mounted);
@@ -1639,7 +1639,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                   }
 
                                                                   context.goNamedAuth(
-                                                                      HomepageWidget
+                                                                      HomePageWidget
                                                                           .routeName,
                                                                       context
                                                                           .mounted);
@@ -1741,7 +1741,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                               }
 
                                                               context.goNamedAuth(
-                                                                  HomepageWidget
+                                                                  HomePageWidget
                                                                       .routeName,
                                                                   context
                                                                       .mounted);

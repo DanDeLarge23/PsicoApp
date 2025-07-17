@@ -60,7 +60,7 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
               size: 30.0,
             ),
             onPressed: () async {
-              context.pushNamed(HomepageWidget.routeName);
+              context.pushNamed(HomePageWidget.routeName);
             },
           ),
           title: Text(

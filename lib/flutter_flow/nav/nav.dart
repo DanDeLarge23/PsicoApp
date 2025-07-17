@@ -96,13 +96,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => MiPerfilWidget(),
         ),
         FFRoute(
-            name: HomepageWidget.routeName,
-            path: HomepageWidget.routePath,
+            name: HomePageWidget.routeName,
+            path: HomePageWidget.routePath,
             builder: (context, params) => params.isEmpty
-                ? NavBarPage(initialPage: 'homepage')
+                ? NavBarPage(initialPage: 'HomePage')
                 : NavBarPage(
-                    initialPage: 'homepage',
-                    page: HomepageWidget(),
+                    initialPage: 'HomePage',
+                    page: HomePageWidget(),
                   )),
         FFRoute(
           name: AgendaWidget.routeName,

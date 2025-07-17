@@ -1620,7 +1620,7 @@ class _AgendaWidgetState extends State<AgendaWidget>
                 hoverColor: Colors.transparent,
                 highlightColor: Colors.transparent,
                 onTap: () async {
-                  context.pushNamed(HomepageWidget.routeName);
+                  context.pushNamed(HomePageWidget.routeName);
                 },
                 child: Icon(
                   Icons.arrow_back,

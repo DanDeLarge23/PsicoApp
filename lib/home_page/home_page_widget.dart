@@ -7,29 +7,29 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart'
     as smooth_page_indicator;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'homepage_model.dart';
-export 'homepage_model.dart';
+import 'home_page_model.dart';
+export 'home_page_model.dart';
 
-class HomepageWidget extends StatefulWidget {
-  const HomepageWidget({super.key});
+class HomePageWidget extends StatefulWidget {
+  const HomePageWidget({super.key});
 
-  static String routeName = 'homepage';
-  static String routePath = '/homepage';
+  static String routeName = 'HomePage';
+  static String routePath = '/homePage';
 
   @override
-  State<HomepageWidget> createState() => _HomepageWidgetState();
+  State<HomePageWidget> createState() => _HomePageWidgetState();
 }
 
-class _HomepageWidgetState extends State<HomepageWidget>
+class _HomePageWidgetState extends State<HomePageWidget>
     with TickerProviderStateMixin {
-  late HomepageModel _model;
+  late HomePageModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => HomepageModel());
+    _model = createModel(context, () => HomePageModel());
 
     _model.tabBarController = TabController(
       vsync: this,
