@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 
 import '/auth/base_auth_user_provider.dart';
 
+import '/main.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 
@@ -76,13 +77,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? MiPerfilWidget() : LoginWidget(),
+          appStateNotifier.loggedIn ? NavBarPage() : LoginWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? MiPerfilWidget() : LoginWidget(),
+              appStateNotifier.loggedIn ? NavBarPage() : LoginWidget(),
         ),
         FFRoute(
           name: LoginWidget.routeName,
@@ -93,7 +94,37 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: MiPerfilWidget.routeName,
           path: MiPerfilWidget.routePath,
           builder: (context, params) => MiPerfilWidget(),
-        )
+        ),
+        FFRoute(
+            name: HomepageWidget.routeName,
+            path: HomepageWidget.routePath,
+            builder: (context, params) => params.isEmpty
+                ? NavBarPage(initialPage: 'homepage')
+                : NavBarPage(
+                    initialPage: 'homepage',
+                    page: HomepageWidget(),
+                  )),
+        FFRoute(
+          name: AgendaWidget.routeName,
+          path: AgendaWidget.routePath,
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'Agenda')
+              : AgendaWidget(),
+        ),
+        FFRoute(
+          name: BuzonMensajesWidget.routeName,
+          path: BuzonMensajesWidget.routePath,
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'BuzonMensajes')
+              : BuzonMensajesWidget(),
+        ),
+        FFRoute(
+            name: TestimoniosWidget.routeName,
+            path: TestimoniosWidget.routePath,
+            builder: (context, params) => NavBarPage(
+                  initialPage: '',
+                  page: TestimoniosWidget(),
+                ))
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
 

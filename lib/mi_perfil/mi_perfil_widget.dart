@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/index.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -44,9 +45,9 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFFF1F4F8),
+        backgroundColor: Color(0xFF61CEBF),
         appBar: AppBar(
-          backgroundColor: Colors.white,
+          backgroundColor: Color(0xFF61CEBF),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -55,24 +56,24 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
             buttonSize: 60.0,
             icon: Icon(
               Icons.arrow_back_rounded,
-              color: Color(0xFF14181B),
+              color: Colors.white,
               size: 30.0,
             ),
-            onPressed: () {
-              print('IconButton pressed ...');
+            onPressed: () async {
+              context.pushNamed(HomepageWidget.routeName);
             },
           ),
           title: Text(
-            'Profile',
+            'Mi Perfil',
             style: FlutterFlowTheme.of(context).bodyLarge.override(
                   font: GoogleFonts.plusJakartaSans(
-                    fontWeight: FontWeight.normal,
+                    fontWeight: FontWeight.bold,
                     fontStyle: FlutterFlowTheme.of(context).bodyLarge.fontStyle,
                   ),
-                  color: Color(0xFF14181B),
-                  fontSize: 16.0,
+                  color: Colors.white,
+                  fontSize: 30.0,
                   letterSpacing: 0.0,
-                  fontWeight: FontWeight.normal,
+                  fontWeight: FontWeight.bold,
                   fontStyle: FlutterFlowTheme.of(context).bodyLarge.fontStyle,
                 ),
           ),
@@ -199,14 +200,14 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: Text(
-                  'Account',
+                  'Cuenta',
                   style: FlutterFlowTheme.of(context).labelLarge.override(
                         font: GoogleFonts.plusJakartaSans(
                           fontWeight: FontWeight.normal,
                           fontStyle:
                               FlutterFlowTheme.of(context).labelLarge.fontStyle,
                         ),
-                        color: Color(0xFF57636C),
+                        color: Colors.white,
                         fontSize: 16.0,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
@@ -250,7 +251,7 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
-                              'Payment Options',
+                              'Opciones de Pago',
                               style: FlutterFlowTheme.of(context)
                                   .bodyLarge
                                   .override(
@@ -319,7 +320,7 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
-                              'Country',
+                              'Idioma de preferencia ',
                               style: FlutterFlowTheme.of(context)
                                   .bodyLarge
                                   .override(
@@ -388,7 +389,7 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
-                              'Notification Settings',
+                              'Notificaciones ',
                               style: FlutterFlowTheme.of(context)
                                   .bodyLarge
                                   .override(
@@ -457,7 +458,7 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
-                              'Edit Profile',
+                              'Perfil',
                               style: FlutterFlowTheme.of(context)
                                   .bodyLarge
                                   .override(
@@ -501,7 +502,7 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                           fontStyle:
                               FlutterFlowTheme.of(context).labelLarge.fontStyle,
                         ),
-                        color: Color(0xFF57636C),
+                        color: Colors.white,
                         fontSize: 16.0,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
@@ -545,7 +546,7 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
-                              'Support',
+                              'Ayuda',
                               style: FlutterFlowTheme.of(context)
                                   .bodyLarge
                                   .override(
@@ -614,7 +615,7 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
-                              'Terms of Service',
+                              'Terminos y condiciones ',
                               style: FlutterFlowTheme.of(context)
                                   .bodyLarge
                                   .override(
@@ -650,66 +651,75 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
               ),
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
-                child: Container(
-                  width: double.infinity,
-                  height: 60.0,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    boxShadow: [
-                      BoxShadow(
-                        blurRadius: 5.0,
-                        color: Color(0x3416202A),
-                        offset: Offset(
-                          0.0,
-                          2.0,
-                        ),
-                      )
-                    ],
-                    borderRadius: BorderRadius.circular(12.0),
-                    shape: BoxShape.rectangle,
-                  ),
-                  child: Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Icon(
-                          Icons.ios_share,
-                          color: Color(0xFF57636C),
-                          size: 24.0,
-                        ),
-                        Expanded(
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                12.0, 0.0, 0.0, 0.0),
-                            child: Text(
-                              'Invite Friends',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyLarge
-                                  .override(
-                                    font: GoogleFonts.plusJakartaSans(
+                child: InkWell(
+                  splashColor: Colors.transparent,
+                  focusColor: Colors.transparent,
+                  hoverColor: Colors.transparent,
+                  highlightColor: Colors.transparent,
+                  onTap: () async {
+                    context.pushNamed(TestimoniosWidget.routeName);
+                  },
+                  child: Container(
+                    width: double.infinity,
+                    height: 60.0,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5.0,
+                          color: Color(0x3416202A),
+                          offset: Offset(
+                            0.0,
+                            2.0,
+                          ),
+                        )
+                      ],
+                      borderRadius: BorderRadius.circular(12.0),
+                      shape: BoxShape.rectangle,
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Icon(
+                            Icons.people,
+                            color: Color(0xFF57636C),
+                            size: 24.0,
+                          ),
+                          Expanded(
+                            child: Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  12.0, 0.0, 0.0, 0.0),
+                              child: Text(
+                                'Testimonios ',
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyLarge
+                                    .override(
+                                      font: GoogleFonts.plusJakartaSans(
+                                        fontWeight: FontWeight.normal,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .bodyLarge
+                                            .fontStyle,
+                                      ),
+                                      color: Color(0xFF14181B),
+                                      fontSize: 16.0,
+                                      letterSpacing: 0.0,
                                       fontWeight: FontWeight.normal,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .bodyLarge
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF14181B),
-                                    fontSize: 16.0,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FontWeight.normal,
-                                    fontStyle: FlutterFlowTheme.of(context)
-                                        .bodyLarge
-                                        .fontStyle,
-                                  ),
+                              ),
                             ),
                           ),
-                        ),
-                        Icon(
-                          Icons.arrow_forward_ios,
-                          color: Color(0xFF57636C),
-                          size: 18.0,
-                        ),
-                      ],
+                          Icon(
+                            Icons.arrow_forward_ios,
+                            color: Color(0xFF57636C),
+                            size: 18.0,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
