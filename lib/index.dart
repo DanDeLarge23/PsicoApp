@@ -8,3 +8,4 @@ export '/testimonios/testimonios_widget.dart' show TestimoniosWidget;
 export '/login_admin/login_admin_widget.dart' show LoginAdminWidget;
 export '/materiales/materiales_widget.dart' show MaterialesWidget;
 export '/home_admin/home_admin_widget.dart' show HomeAdminWidget;
+export '/citas_pacientes/citas_pacientes_widget.dart' show CitasPacientesWidget;

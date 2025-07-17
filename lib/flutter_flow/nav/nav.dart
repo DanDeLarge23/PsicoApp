@@ -141,6 +141,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: HomeAdminWidget.routeName,
           path: HomeAdminWidget.routePath,
           builder: (context, params) => HomeAdminWidget(),
+        ),
+        FFRoute(
+          name: CitasPacientesWidget.routeName,
+          path: CitasPacientesWidget.routePath,
+          builder: (context, params) => CitasPacientesWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
