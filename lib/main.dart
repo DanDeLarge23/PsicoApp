@@ -135,6 +135,7 @@ class _NavBarPageState extends State<NavBarPage> {
       'HomePage': HomePageWidget(),
       'Agenda': AgendaWidget(),
       'BuzonMensajes': BuzonMensajesWidget(),
+      'Materiales': MaterialesWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
 
@@ -231,6 +232,30 @@ class _NavBarPageState extends State<NavBarPage> {
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     color: currentIndex == 2
+                        ? FlutterFlowTheme.of(context).primary
+                        : FlutterFlowTheme.of(context).secondaryText,
+                    fontSize: 11.0,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          FloatingNavbarItem(
+            customWidget: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.medication_rounded,
+                  color: currentIndex == 3
+                      ? FlutterFlowTheme.of(context).primary
+                      : FlutterFlowTheme.of(context).secondaryText,
+                  size: 24.0,
+                ),
+                Text(
+                  'Recursos',
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                    color: currentIndex == 3
                         ? FlutterFlowTheme.of(context).primary
                         : FlutterFlowTheme.of(context).secondaryText,
                     fontSize: 11.0,

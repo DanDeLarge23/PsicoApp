@@ -891,7 +891,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
-                                                                          16.0),
+                                                                          5.0),
                                                               child: Wrap(
                                                                 spacing: 16.0,
                                                                 runSpacing: 0.0,
@@ -945,6 +945,105 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                         size:
                                                                             20.0,
                                                                       ),
+                                                                      options:
+                                                                          FFButtonOptions(
+                                                                        width:
+                                                                            230.0,
+                                                                        height:
+                                                                            44.0,
+                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0),
+                                                                        iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0),
+                                                                        color: Colors
+                                                                            .white,
+                                                                        textStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .override(
+                                                                              font: GoogleFonts.plusJakartaSans(
+                                                                                fontWeight: FontWeight.bold,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
+                                                                              color: Color(0xFF101213),
+                                                                              fontSize: 14.0,
+                                                                              letterSpacing: 0.0,
+                                                                              fontWeight: FontWeight.bold,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                            ),
+                                                                        elevation:
+                                                                            0.0,
+                                                                        borderSide:
+                                                                            BorderSide(
+                                                                          color:
+                                                                              Color(0xFFE0E3E7),
+                                                                          width:
+                                                                              2.0,
+                                                                        ),
+                                                                        borderRadius:
+                                                                            BorderRadius.circular(40.0),
+                                                                        hoverColor:
+                                                                            Color(0xFFF1F4F8),
+                                                                      ),
+                                                                    ),
+                                                                  ),
+                                                                ],
+                                                              ),
+                                                            ),
+                                                          ),
+                                                          Align(
+                                                            alignment:
+                                                                AlignmentDirectional(
+                                                                    0.0, 0.0),
+                                                            child: Padding(
+                                                              padding:
+                                                                  EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          0.0,
+                                                                          0.0,
+                                                                          0.0,
+                                                                          30.0),
+                                                              child: Wrap(
+                                                                spacing: 16.0,
+                                                                runSpacing: 0.0,
+                                                                alignment:
+                                                                    WrapAlignment
+                                                                        .center,
+                                                                crossAxisAlignment:
+                                                                    WrapCrossAlignment
+                                                                        .center,
+                                                                direction: Axis
+                                                                    .horizontal,
+                                                                runAlignment:
+                                                                    WrapAlignment
+                                                                        .center,
+                                                                verticalDirection:
+                                                                    VerticalDirection
+                                                                        .down,
+                                                                clipBehavior:
+                                                                    Clip.none,
+                                                                children: [
+                                                                  Padding(
+                                                                    padding: EdgeInsetsDirectional
+                                                                        .fromSTEB(
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            16.0),
+                                                                    child:
+                                                                        FFButtonWidget(
+                                                                      onPressed:
+                                                                          () async {
+                                                                        context.pushNamed(
+                                                                            LoginAdminWidget.routeName);
+                                                                      },
+                                                                      text:
+                                                                          'Ingreso de Admin',
                                                                       options:
                                                                           FFButtonOptions(
                                                                         width:

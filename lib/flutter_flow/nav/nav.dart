@@ -124,7 +124,24 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             builder: (context, params) => NavBarPage(
                   initialPage: '',
                   page: TestimoniosWidget(),
-                ))
+                )),
+        FFRoute(
+          name: LoginAdminWidget.routeName,
+          path: LoginAdminWidget.routePath,
+          builder: (context, params) => LoginAdminWidget(),
+        ),
+        FFRoute(
+          name: MaterialesWidget.routeName,
+          path: MaterialesWidget.routePath,
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'Materiales')
+              : MaterialesWidget(),
+        ),
+        FFRoute(
+          name: HomeAdminWidget.routeName,
+          path: HomeAdminWidget.routePath,
+          builder: (context, params) => HomeAdminWidget(),
+        )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
 
