@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "716823179234",
+    "project_id": "psicoapp-2025",
+    "storage_bucket": "psicoapp-2025.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716823179234:android:14fc2cab174eeb43d953bb",
+        "android_client_info": {
+          "package_name": "com.psicoapp.psicoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716823179234-l21oojjsamf5jfeii2biqoj1270hhck2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.psicoapp.psicoapp",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "716823179234-olabmtq8jaa0ki6m1i98boek4l2tdi6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8uVULc-9qmqgUpI8jKoC0tIPYhCgsa2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716823179234-olabmtq8jaa0ki6m1i98boek4l2tdi6p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "716823179234-u580pb3u0aht7qlesn4mn73sb8nnlgtt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.psicoapp.psicoapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
