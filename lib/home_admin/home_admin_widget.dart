@@ -126,7 +126,7 @@ class _HomeAdminWidgetState extends State<HomeAdminWidget>
                           text: 'Activos',
                         ),
                         Tab(
-                          text: 'Inactive',
+                          text: 'Inactivos',
                         ),
                       ],
                       controller: _model.tabBarController,

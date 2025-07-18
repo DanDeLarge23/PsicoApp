@@ -80,43 +80,62 @@ class _AgendaWidgetState extends State<AgendaWidget>
           actions: [
             Padding(
               padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 24.0, 0.0),
-              child: badges.Badge(
-                badgeContent: Text(
-                  '1',
-                  style: FlutterFlowTheme.of(context).bodyMedium.override(
-                        font: GoogleFonts.plusJakartaSans(
+              child: InkWell(
+                splashColor: Colors.transparent,
+                focusColor: Colors.transparent,
+                hoverColor: Colors.transparent,
+                highlightColor: Colors.transparent,
+                onTap: () async {
+                  context.pushNamed(BuzonMensajesWidget.routeName);
+                },
+                child: badges.Badge(
+                  badgeContent: Text(
+                    '1',
+                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                          font: GoogleFonts.plusJakartaSans(
+                            fontWeight: FontWeight.normal,
+                            fontStyle: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .fontStyle,
+                          ),
+                          color: Colors.white,
+                          fontSize: 14.0,
+                          letterSpacing: 0.0,
                           fontWeight: FontWeight.normal,
                           fontStyle:
                               FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                         ),
-                        color: Colors.white,
-                        fontSize: 14.0,
-                        letterSpacing: 0.0,
-                        fontWeight: FontWeight.normal,
-                        fontStyle:
-                            FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                  ),
+                  showBadge: true,
+                  shape: badges.BadgeShape.circle,
+                  badgeColor: Color(0xFF4B39EF),
+                  elevation: 4.0,
+                  padding: EdgeInsets.all(8.0),
+                  position: badges.BadgePosition.topEnd(),
+                  animationType: badges.BadgeAnimationType.scale,
+                  toAnimate: true,
+                  child: Stack(
+                    children: [
+                      Padding(
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 0.0),
+                        child: InkWell(
+                          splashColor: Colors.transparent,
+                          focusColor: Colors.transparent,
+                          hoverColor: Colors.transparent,
+                          highlightColor: Colors.transparent,
+                          onTap: () async {
+                            context.pushNamed(BuzonMensajesWidget.routeName);
+                          },
+                          child: Icon(
+                            Icons.chat_bubble_outline_outlined,
+                            color: Colors.white,
+                            size: 24.0,
+                          ),
+                        ),
                       ),
-                ),
-                showBadge: true,
-                shape: badges.BadgeShape.circle,
-                badgeColor: Color(0xFF4B39EF),
-                elevation: 4.0,
-                padding: EdgeInsets.all(8.0),
-                position: badges.BadgePosition.topEnd(),
-                animationType: badges.BadgeAnimationType.scale,
-                toAnimate: true,
-                child: Stack(
-                  children: [
-                    Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 0.0),
-                      child: Icon(
-                        Icons.chat_bubble_outline_outlined,
-                        color: Colors.white,
-                        size: 24.0,
-                      ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ),

@@ -64,15 +64,15 @@ class _CitasPacientesWidgetState extends State<CitasPacientesWidget> {
             },
           ),
           title: Text(
-            'Agenda de pacientes',
+            'AGENDA DE PACIENTES',
             style: FlutterFlowTheme.of(context).headlineLarge.override(
                   font: GoogleFonts.outfit(
                     fontWeight: FontWeight.normal,
                     fontStyle:
                         FlutterFlowTheme.of(context).headlineLarge.fontStyle,
                   ),
-                  color: Color(0xFF15161E),
-                  fontSize: 32.0,
+                  color: FlutterFlowTheme.of(context).primaryBackground,
+                  fontSize: 25.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.normal,
                   fontStyle:
@@ -98,7 +98,7 @@ class _CitasPacientesWidgetState extends State<CitasPacientesWidget> {
                       maxWidth: 430.0,
                     ),
                     decoration: BoxDecoration(
-                      color: Color(0xFFF1F4F8),
+                      color: Color(0xFF61CEBF),
                       borderRadius: BorderRadius.circular(0.0),
                     ),
                     alignment: AlignmentDirectional(-1.0, 0.0),
@@ -117,7 +117,8 @@ class _CitasPacientesWidgetState extends State<CitasPacientesWidget> {
                                           .titleLarge
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF15161E),
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryBackground,
                                     fontSize: 22.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -717,7 +718,7 @@ class _CitasPacientesWidgetState extends State<CitasPacientesWidget> {
                       maxWidth: 430.0,
                     ),
                     decoration: BoxDecoration(
-                      color: Color(0xFFF1F4F8),
+                      color: Color(0xFF61CEBF),
                       borderRadius: BorderRadius.circular(0.0),
                     ),
                     alignment: AlignmentDirectional(-1.0, 0.0),
@@ -736,7 +737,8 @@ class _CitasPacientesWidgetState extends State<CitasPacientesWidget> {
                                           .titleLarge
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF15161E),
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryBackground,
                                     fontSize: 22.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -1224,7 +1226,7 @@ class _CitasPacientesWidgetState extends State<CitasPacientesWidget> {
                       maxWidth: 430.0,
                     ),
                     decoration: BoxDecoration(
-                      color: Color(0xFFF1F4F8),
+                      color: Color(0xFF61CEBF),
                       borderRadius: BorderRadius.circular(0.0),
                     ),
                     alignment: AlignmentDirectional(-1.0, 0.0),
@@ -1243,7 +1245,8 @@ class _CitasPacientesWidgetState extends State<CitasPacientesWidget> {
                                           .titleLarge
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF15161E),
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryBackground,
                                     fontSize: 22.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -1845,7 +1848,7 @@ class _CitasPacientesWidgetState extends State<CitasPacientesWidget> {
                         maxWidth: 430.0,
                       ),
                       decoration: BoxDecoration(
-                        color: Color(0xFFF1F4F8),
+                        color: Color(0xFF61CEBF),
                         borderRadius: BorderRadius.circular(0.0),
                       ),
                       alignment: AlignmentDirectional(-1.0, 0.0),
@@ -1865,7 +1868,8 @@ class _CitasPacientesWidgetState extends State<CitasPacientesWidget> {
                                         .titleLarge
                                         .fontStyle,
                                   ),
-                                  color: Color(0xFF15161E),
+                                  color: FlutterFlowTheme.of(context)
+                                      .primaryBackground,
                                   fontSize: 22.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
