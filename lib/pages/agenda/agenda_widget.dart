@@ -554,7 +554,7 @@ class _AgendaWidgetState extends State<AgendaWidget>
                                                                         ),
                                                                       ),
                                                                       Text(
-                                                                        'Miércoles, 03/08/2025',
+                                                                        'Miércoles, 16/08/2025',
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodySmall
                                                                             .override(

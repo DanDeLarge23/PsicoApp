@@ -146,6 +146,27 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: CitasPacientesWidget.routeName,
           path: CitasPacientesWidget.routePath,
           builder: (context, params) => CitasPacientesWidget(),
+        ),
+        FFRoute(
+          name: RecordatoriosWidget.routeName,
+          path: RecordatoriosWidget.routePath,
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'Recordatorios')
+              : RecordatoriosWidget(),
+        ),
+        FFRoute(
+            name: HistorialClinicoWidget.routeName,
+            path: HistorialClinicoWidget.routePath,
+            builder: (context, params) => NavBarPage(
+                  initialPage: '',
+                  page: HistorialClinicoWidget(),
+                )),
+        FFRoute(
+          name: NotasConfidencialesWidget.routeName,
+          path: NotasConfidencialesWidget.routePath,
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'NotasConfidenciales')
+              : NotasConfidencialesWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
