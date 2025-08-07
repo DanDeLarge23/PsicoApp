@@ -3,9 +3,7 @@ import '/flutter_flow/flutter_flow_button_tabbar.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/index.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'testimonios_model.dart';
@@ -33,11 +31,6 @@ class _TestimoniosWidgetState extends State<TestimoniosWidget>
   void initState() {
     super.initState();
     _model = createModel(context, () => TestimoniosModel());
-
-    // On page load action.
-    SchedulerBinding.instance.addPostFrameCallback((_) async {
-      context.pushNamed(MiPerfilWidget.routeName);
-    });
 
     _model.tabBarController = TabController(
       vsync: this,
@@ -155,8 +148,8 @@ class _TestimoniosWidgetState extends State<TestimoniosWidget>
                     color: Colors.white,
                     size: 30.0,
                   ),
-                  onPressed: () async {
-                    context.pushNamed(MiPerfilWidget.routeName);
+                  onPressed: () {
+                    print('IconButton pressed ...');
                   },
                 ),
               ),

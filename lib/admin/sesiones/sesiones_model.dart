@@ -1,9 +1,9 @@
 import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
-import 'mi_perfil_widget.dart' show MiPerfilWidget;
+import 'sesiones_widget.dart' show SesionesWidget;
 import 'package:flutter/material.dart';
 
-class MiPerfilModel extends FlutterFlowModel<MiPerfilWidget> {
+class SesionesModel extends FlutterFlowModel<SesionesWidget> {
   @override
   void initState(BuildContext context) {}
 

@@ -725,31 +725,9 @@ class _LoginAdminWidgetState extends State<LoginAdminWidget>
                                                           child: FFButtonWidget(
                                                             onPressed:
                                                                 () async {
-                                                              GoRouter.of(
-                                                                      context)
-                                                                  .prepareAuthEvent();
-
-                                                              final user =
-                                                                  await authManager
-                                                                      .signInWithEmail(
-                                                                context,
-                                                                _model
-                                                                    .emailAddressTextController
-                                                                    .text,
-                                                                _model
-                                                                    .passwordTextController
-                                                                    .text,
-                                                              );
-                                                              if (user ==
-                                                                  null) {
-                                                                return;
-                                                              }
-
-                                                              context.goNamedAuth(
-                                                                  HomePageWidget
-                                                                      .routeName,
-                                                                  context
-                                                                      .mounted);
+                                                              context.pushNamed(
+                                                                  PerfilAdminWidget
+                                                                      .routeName);
                                                             },
                                                             text: 'Ingresar',
                                                             options:

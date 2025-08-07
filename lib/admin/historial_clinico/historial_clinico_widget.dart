@@ -7,7 +7,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'historial_clinico_model.dart';
@@ -35,11 +34,6 @@ class _HistorialClinicoWidgetState extends State<HistorialClinicoWidget>
   void initState() {
     super.initState();
     _model = createModel(context, () => HistorialClinicoModel());
-
-    // On page load action.
-    SchedulerBinding.instance.addPostFrameCallback((_) async {
-      context.pushNamed(MiPerfilWidget.routeName);
-    });
 
     _model.tabBarController = TabController(
       vsync: this,
@@ -123,6 +117,26 @@ class _HistorialClinicoWidgetState extends State<HistorialClinicoWidget>
         appBar: AppBar(
           backgroundColor: Color(0xFF61CEBF),
           automaticallyImplyLeading: false,
+          leading: Align(
+            alignment: AlignmentDirectional(-1.0, 0.0),
+            child: Padding(
+              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+              child: FlutterFlowIconButton(
+                borderColor: Colors.transparent,
+                borderRadius: 30.0,
+                borderWidth: 1.0,
+                buttonSize: 60.0,
+                icon: Icon(
+                  Icons.arrow_back_rounded,
+                  color: Colors.white,
+                  size: 30.0,
+                ),
+                onPressed: () async {
+                  context.pushNamed(PerfilAdminWidget.routeName);
+                },
+              ),
+            ),
+          ),
           title: Align(
             alignment: AlignmentDirectional(0.0, 0.0),
             child: Text(
@@ -142,28 +156,7 @@ class _HistorialClinicoWidgetState extends State<HistorialClinicoWidget>
                   ),
             ),
           ),
-          actions: [
-            Align(
-              alignment: AlignmentDirectional(-1.0, 0.0),
-              child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
-                child: FlutterFlowIconButton(
-                  borderColor: Colors.transparent,
-                  borderRadius: 30.0,
-                  borderWidth: 1.0,
-                  buttonSize: 60.0,
-                  icon: Icon(
-                    Icons.arrow_back_rounded,
-                    color: Colors.white,
-                    size: 30.0,
-                  ),
-                  onPressed: () async {
-                    context.pushNamed(HomeAdminWidget.routeName);
-                  },
-                ),
-              ),
-            ),
-          ],
+          actions: [],
           centerTitle: false,
           elevation: 0.0,
         ),

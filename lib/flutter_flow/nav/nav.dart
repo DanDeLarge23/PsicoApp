@@ -91,11 +91,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => LoginWidget(),
         ),
         FFRoute(
-          name: MiPerfilWidget.routeName,
-          path: MiPerfilWidget.routePath,
-          builder: (context, params) => MiPerfilWidget(),
-        ),
-        FFRoute(
             name: HomePageWidget.routeName,
             path: HomePageWidget.routePath,
             builder: (context, params) => params.isEmpty
@@ -177,6 +172,27 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: PerfilAdminWidget.routeName,
           path: PerfilAdminWidget.routePath,
           builder: (context, params) => PerfilAdminWidget(),
+        ),
+        FFRoute(
+          name: AgendaAdminWidget.routeName,
+          path: AgendaAdminWidget.routePath,
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'AgendaAdmin')
+              : AgendaAdminWidget(),
+        ),
+        FFRoute(
+          name: BuzonMensajesAdminWidget.routeName,
+          path: BuzonMensajesAdminWidget.routePath,
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'BuzonMensajesAdmin')
+              : BuzonMensajesAdminWidget(),
+        ),
+        FFRoute(
+          name: SesionesWidget.routeName,
+          path: SesionesWidget.routePath,
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'Sesiones')
+              : SesionesWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

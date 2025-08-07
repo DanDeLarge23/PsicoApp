@@ -60,7 +60,7 @@ class _CitasPacientesWidgetState extends State<CitasPacientesWidget> {
               size: 30.0,
             ),
             onPressed: () async {
-              context.pushNamed(HomeAdminWidget.routeName);
+              context.pushNamed(PerfilAdminWidget.routeName);
             },
           ),
           title: Text(

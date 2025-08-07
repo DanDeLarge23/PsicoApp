@@ -1,10 +1,10 @@
 import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
-import 'notas_confidenciales_widget.dart' show NotasConfidencialesWidget;
+import 'buzon_mensajes_admin_widget.dart' show BuzonMensajesAdminWidget;
 import 'package:flutter/material.dart';
 
-class NotasConfidencialesModel
-    extends FlutterFlowModel<NotasConfidencialesWidget> {
+class BuzonMensajesAdminModel
+    extends FlutterFlowModel<BuzonMensajesAdminWidget> {
   @override
   void initState(BuildContext context) {}
 

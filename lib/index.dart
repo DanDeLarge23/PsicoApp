@@ -1,6 +1,5 @@
 // Export pages
 export '/pages/login/login_widget.dart' show LoginWidget;
-export '/pages/mi_perfil/mi_perfil_widget.dart' show MiPerfilWidget;
 export '/pages/home_page/home_page_widget.dart' show HomePageWidget;
 export '/pages/agenda/agenda_widget.dart' show AgendaWidget;
 export '/pages/buzon_mensajes/buzon_mensajes_widget.dart'
@@ -19,3 +18,7 @@ export '/admin/notas_confidenciales/notas_confidenciales_widget.dart'
     show NotasConfidencialesWidget;
 export '/sinpe/sinpe_widget.dart' show SinpeWidget;
 export '/admin/perfil_admin/perfil_admin_widget.dart' show PerfilAdminWidget;
+export '/admin/agenda_admin/agenda_admin_widget.dart' show AgendaAdminWidget;
+export '/admin/buzon_mensajes_admin/buzon_mensajes_admin_widget.dart'
+    show BuzonMensajesAdminWidget;
+export '/admin/sesiones/sesiones_widget.dart' show SesionesWidget;
