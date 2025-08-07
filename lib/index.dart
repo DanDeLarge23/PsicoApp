@@ -17,3 +17,4 @@ export '/admin/historial_clinico/historial_clinico_widget.dart'
     show HistorialClinicoWidget;
 export '/admin/notas_confidenciales/notas_confidenciales_widget.dart'
     show NotasConfidencialesWidget;
+export '/sinpe/sinpe_widget.dart' show SinpeWidget;
