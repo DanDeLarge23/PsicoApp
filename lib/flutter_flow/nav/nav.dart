@@ -172,6 +172,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: SinpeWidget.routeName,
           path: SinpeWidget.routePath,
           builder: (context, params) => SinpeWidget(),
+        ),
+        FFRoute(
+          name: PerfilAdminWidget.routeName,
+          path: PerfilAdminWidget.routePath,
+          builder: (context, params) => PerfilAdminWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

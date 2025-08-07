@@ -1,9 +1,9 @@
 import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
-import 'buzon_mensajes_widget.dart' show BuzonMensajesWidget;
+import 'perfil_admin_widget.dart' show PerfilAdminWidget;
 import 'package:flutter/material.dart';
 
-class BuzonMensajesModel extends FlutterFlowModel<BuzonMensajesWidget> {
+class PerfilAdminModel extends FlutterFlowModel<PerfilAdminWidget> {
   @override
   void initState(BuildContext context) {}
 

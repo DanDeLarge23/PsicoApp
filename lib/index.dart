@@ -18,3 +18,4 @@ export '/admin/historial_clinico/historial_clinico_widget.dart'
 export '/admin/notas_confidenciales/notas_confidenciales_widget.dart'
     show NotasConfidencialesWidget;
 export '/sinpe/sinpe_widget.dart' show SinpeWidget;
+export '/admin/perfil_admin/perfil_admin_widget.dart' show PerfilAdminWidget;

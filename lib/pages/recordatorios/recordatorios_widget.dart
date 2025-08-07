@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'recordatorios_model.dart';
@@ -58,7 +59,7 @@ class _RecordatoriosWidgetState extends State<RecordatoriosWidget> {
               size: 30.0,
             ),
             onPressed: () async {
-              context.safePop();
+              context.pushNamed(HomePageWidget.routeName);
             },
           ),
           title: Text(

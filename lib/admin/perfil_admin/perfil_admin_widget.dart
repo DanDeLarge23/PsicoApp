@@ -6,28 +6,28 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'mi_perfil_model.dart';
-export 'mi_perfil_model.dart';
+import 'perfil_admin_model.dart';
+export 'perfil_admin_model.dart';
 
-class MiPerfilWidget extends StatefulWidget {
-  const MiPerfilWidget({super.key});
+class PerfilAdminWidget extends StatefulWidget {
+  const PerfilAdminWidget({super.key});
 
-  static String routeName = 'MiPerfil';
-  static String routePath = '/miPerfil';
+  static String routeName = 'PerfilAdmin';
+  static String routePath = '/perfilAdmin';
 
   @override
-  State<MiPerfilWidget> createState() => _MiPerfilWidgetState();
+  State<PerfilAdminWidget> createState() => _PerfilAdminWidgetState();
 }
 
-class _MiPerfilWidgetState extends State<MiPerfilWidget> {
-  late MiPerfilModel _model;
+class _PerfilAdminWidgetState extends State<PerfilAdminWidget> {
+  late PerfilAdminModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => MiPerfilModel());
+    _model = createModel(context, () => PerfilAdminModel());
   }
 
   @override
@@ -146,7 +146,7 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Daniela',
+                                'María Fernanda',
                                 style: FlutterFlowTheme.of(context)
                                     .headlineSmall
                                     .override(
@@ -169,7 +169,7 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 4.0, 0.0, 0.0),
                                 child: Text(
-                                  'Paciente',
+                                  'Licda.',
                                   style: FlutterFlowTheme.of(context)
                                       .labelMedium
                                       .override(
@@ -223,7 +223,7 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                   width: double.infinity,
                   height: 60.0,
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: Color(0xFFF02E2E),
                     boxShadow: [
                       BoxShadow(
                         blurRadius: 5.0,
@@ -243,22 +243,14 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
-                          child: FaIcon(
-                            FontAwesomeIcons.video,
-                            color: FlutterFlowTheme.of(context).primaryText,
-                            size: 24.0,
-                          ),
-                        ),
                         Expanded(
                           child: Align(
-                            alignment: AlignmentDirectional(-1.0, 0.0),
+                            alignment: AlignmentDirectional(0.0, 0.0),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
-                                'Video Llamada',
+                                'Emergencia',
                                 style: FlutterFlowTheme.of(context)
                                     .bodyLarge
                                     .override(
@@ -268,7 +260,7 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                                             .bodyLarge
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF333333),
+                                      color: Colors.white,
                                       fontSize: 16.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.normal,
@@ -310,8 +302,8 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        Icon(
-                          Icons.language_outlined,
+                        FaIcon(
+                          FontAwesomeIcons.calendarCheck,
                           color: Color(0xFF57636C),
                           size: 24.0,
                         ),
@@ -320,7 +312,7 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
-                              'Idioma de preferencia ',
+                              'Manejo de citas',
                               style: FlutterFlowTheme.of(context)
                                   .bodyLarge
                                   .override(
@@ -379,8 +371,8 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        Icon(
-                          Icons.notifications_none,
+                        FaIcon(
+                          FontAwesomeIcons.pen,
                           color: Color(0xFF57636C),
                           size: 24.0,
                         ),
@@ -389,7 +381,7 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
-                              'Notificaciones ',
+                              'Notas Confidenciales',
                               style: FlutterFlowTheme.of(context)
                                   .bodyLarge
                                   .override(
@@ -448,8 +440,8 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        Icon(
-                          Icons.account_circle_outlined,
+                        FaIcon(
+                          FontAwesomeIcons.sign,
                           color: Color(0xFF57636C),
                           size: 24.0,
                         ),
@@ -458,7 +450,7 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
-                              'Perfil',
+                              'Sesiones',
                               style: FlutterFlowTheme.of(context)
                                   .bodyLarge
                                   .override(
@@ -536,8 +528,8 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        Icon(
-                          Icons.help_outline_rounded,
+                        FaIcon(
+                          FontAwesomeIcons.list,
                           color: Color(0xFF57636C),
                           size: 24.0,
                         ),
@@ -546,7 +538,7 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
-                              'Ayuda',
+                              'Historial Clínico',
                               style: FlutterFlowTheme.of(context)
                                   .bodyLarge
                                   .override(
@@ -605,8 +597,8 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        Icon(
-                          Icons.privacy_tip_rounded,
+                        FaIcon(
+                          FontAwesomeIcons.solidCalendarAlt,
                           color: Color(0xFF57636C),
                           size: 24.0,
                         ),
@@ -615,7 +607,7 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
-                              'Terminos y condiciones ',
+                              'Calendario',
                               style: FlutterFlowTheme.of(context)
                                   .bodyLarge
                                   .override(
@@ -682,8 +674,8 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
-                          Icon(
-                            Icons.people,
+                          FaIcon(
+                            FontAwesomeIcons.cog,
                             color: Color(0xFF57636C),
                             size: 24.0,
                           ),
@@ -692,7 +684,7 @@ class _MiPerfilWidgetState extends State<MiPerfilWidget> {
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
-                                'Testimonios ',
+                                'Ajustes',
                                 style: FlutterFlowTheme.of(context)
                                     .bodyLarge
                                     .override(
