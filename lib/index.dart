@@ -16,7 +16,7 @@ export '/admin/historial_clinico/historial_clinico_widget.dart'
     show HistorialClinicoWidget;
 export '/admin/notas_confidenciales/notas_confidenciales_widget.dart'
     show NotasConfidencialesWidget;
-export '/sinpe/sinpe_widget.dart' show SinpeWidget;
+export '/pages/sinpe/sinpe_widget.dart' show SinpeWidget;
 export '/admin/perfil_admin/perfil_admin_widget.dart' show PerfilAdminWidget;
 export '/admin/agenda_admin/agenda_admin_widget.dart' show AgendaAdminWidget;
 export '/admin/buzon_mensajes_admin/buzon_mensajes_admin_widget.dart'

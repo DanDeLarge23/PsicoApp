@@ -6,6 +6,7 @@ import '/index.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart'
     as smooth_page_indicator;
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'home_page_model.dart';
 export 'home_page_model.dart';
@@ -112,6 +113,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                           ),
                           child: Image.asset(
                             'assets/images/userAvatar.png',
+                            fit: BoxFit.cover,
                           ),
                         ),
                         InkWell(
@@ -127,8 +129,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                             context.goNamedAuth(
                                 LoginWidget.routeName, context.mounted);
                           },
-                          child: Icon(
-                            Icons.arrow_back,
+                          child: FaIcon(
+                            FontAwesomeIcons.signOutAlt,
                             color: Colors.white,
                             size: 24.0,
                           ),

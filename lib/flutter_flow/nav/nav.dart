@@ -150,19 +150,15 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               : RecordatoriosWidget(),
         ),
         FFRoute(
-            name: HistorialClinicoWidget.routeName,
-            path: HistorialClinicoWidget.routePath,
-            builder: (context, params) => NavBarPage(
-                  initialPage: '',
-                  page: HistorialClinicoWidget(),
-                )),
+          name: HistorialClinicoWidget.routeName,
+          path: HistorialClinicoWidget.routePath,
+          builder: (context, params) => HistorialClinicoWidget(),
+        ),
         FFRoute(
-            name: NotasConfidencialesWidget.routeName,
-            path: NotasConfidencialesWidget.routePath,
-            builder: (context, params) => NavBarPage(
-                  initialPage: '',
-                  page: NotasConfidencialesWidget(),
-                )),
+          name: NotasConfidencialesWidget.routeName,
+          path: NotasConfidencialesWidget.routePath,
+          builder: (context, params) => NotasConfidencialesWidget(),
+        ),
         FFRoute(
           name: SinpeWidget.routeName,
           path: SinpeWidget.routePath,
@@ -176,23 +172,17 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: AgendaAdminWidget.routeName,
           path: AgendaAdminWidget.routePath,
-          builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'AgendaAdmin')
-              : AgendaAdminWidget(),
+          builder: (context, params) => AgendaAdminWidget(),
         ),
         FFRoute(
           name: BuzonMensajesAdminWidget.routeName,
           path: BuzonMensajesAdminWidget.routePath,
-          builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'BuzonMensajesAdmin')
-              : BuzonMensajesAdminWidget(),
+          builder: (context, params) => BuzonMensajesAdminWidget(),
         ),
         FFRoute(
           name: SesionesWidget.routeName,
           path: SesionesWidget.routePath,
-          builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'Sesiones')
-              : SesionesWidget(),
+          builder: (context, params) => SesionesWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
